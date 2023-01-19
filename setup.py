@@ -8,11 +8,12 @@ setup(
   license="GPL-3",
   author="Bailey de Villiers",
   author_email="bailey.devilliers@gmail.com",
+  description = "Website audit tool for digital marketing.",
   long_description=open("README.md", 'r').read(),
   long_description_content_type='text/markdown',
   url='https://github.com/feather-marketing/featherbot',
   keywords="",
-  # v0.0.7 --> works!
+
   packages = find_packages(),
   package_dir={"" : "."},
   install_requires=[
