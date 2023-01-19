@@ -2,14 +2,17 @@ from setuptools import setup, find_packages
 
 setup(
   name="featherbot",
-  version="0.0.1",
-  license="MIT",
+  version="0.0.9",
+  license="GPL-3",
   author="Bailey de Villiers",
   author_email="bailey.devilliers@gmail.com",
-  packages=find_packages("scripts"),
-  package_dir={'': "scripts"},
+  long_description=open("README.md", 'r').read(),
+  long_description_content_type='text/markdown',
   url='https://github.com/feather-marketing/featherbot',
-  keywords="digital marketing",
+  keywords="",
+  # v0.0.7 --> works!
+  packages = ["featherbot.analysts", "featherbot.explorers"],
+  package_dir={"featherbot" : "featherbot"},
   install_requires=[
     "async-generator",
     "attrs",
