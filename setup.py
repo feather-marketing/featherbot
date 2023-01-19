@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
 
+from setuptools import setup, find_packages
+
 setup(
   name="featherbot",
-  version="0.0.9",
+  version="0.0.12",
   license="GPL-3",
   author="Bailey de Villiers",
   author_email="bailey.devilliers@gmail.com",
@@ -11,8 +13,8 @@ setup(
   url='https://github.com/feather-marketing/featherbot',
   keywords="",
   # v0.0.7 --> works!
-  packages = ["featherbot.analysts", "featherbot.explorers"],
-  package_dir={"featherbot" : "featherbot"},
+  packages = find_packages(),
+  package_dir={"" : "."},
   install_requires=[
     "async-generator",
     "attrs",
